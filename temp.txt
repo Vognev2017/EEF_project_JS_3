@@ -1,0 +1,248 @@
+//el.defaultPrevented;
+
+// if (start) {} else {
+//     clearInterval(timer);
+//     start = true;
+// }
+// start = false;
+
+
+// function catMove() {
+//     imgCatEl2.addEventListener('click', () => {
+//         el.defaultPrevented();
+//         let rec2 = container2.getBoundingClientRect()
+//         let recEl2 = imgCatEl2.getBoundingClientRect();
+//         if ((rec2.right - recEl2.right) < 5) {
+//             direction2 = !direction2;
+//         }
+//         if ((recEl2.left - rec2.left) < 5) {
+//             direction2 = !direction2;
+//         }
+//         imgCatEl2.style.left = move(recEl2.left, direction2);
+
+
+//     });
+//     console.log("test");
+//     setInterval(catMove(), 100);
+// }
+///////////////////////////////////////////////////////
+///////////////////////////////////////////////////////
+// const imgCatEl = document.querySelector('.img-1');
+// const container = document.querySelector('.container');
+// const leftS = document.querySelector('.left');
+// const rightS = document.querySelector('.right');
+// let recT = container.getBoundingClientRect()
+// let recElT = imgCatEl.getBoundingClientRect();
+// let posX = recElT.left - recT.left;
+// let direction = true;
+// rightS.classList.remove('hide');
+
+
+// imgCatEl.addEventListener('mousemove', (el) => {
+//     let rec = container.getBoundingClientRect()
+//     let recEl = imgCatEl.getBoundingClientRect();
+
+//     if ((rec.right - recEl.right) > 5) {
+//         move(top, recEl.left);
+//     } else {
+//         console.log("posX :" + posX);
+//         let posN = (rec.right - rec.left) / 2;
+//         move(top, posX);
+//         direction = !direction;
+//         leftS.classList.remove('hide');
+//         rightS.classList.add("hide");
+//     }
+//     if ((recEl.left - rec.left) > 15) {
+//         move(top, recEl.left);
+//     } else {
+//         console.log("posX :" + posX);
+//         let posN = (rec.right - rec.left) / 2;
+//         move(top, (posX));
+//         direction = !direction;
+//         leftS.classList.add("hide");
+//         rightS.classList.remove("hide");
+//     }
+// });
+
+// function move(top, left) {
+//     let y = top;
+//     let x = left;
+//     console.log("x " + x);
+//     console.log("left " + leftS);
+//     if (direction) {
+//         imgCatEl.style.left = x + 10 + 'px';
+//     } else {
+
+//         imgCatEl.style.left = x - 10 + 'px';
+//     }
+// }
+
+//////////////////////////////
+/////////////////////////////////
+// function offsetContainer() {
+//     let bodyRect = document.body.getBoundingClientRect(),
+//         container = container.getBoundingClientRect(),
+//         offset = elemRect.top - bodyRect.top;
+//     return offset;
+// }
+///////////////////////
+//console.log("posY " + posY);
+
+// container.addEventListener('mousemove', (el) => {
+//     console.log("layerX :" + el.layerX);
+//     console.log("recEl.left :" + (recEl.left - rec.left - 50));
+
+//     // let posCh = into_container.getBoundingClientRect();
+//     //console.log("posCh :" + posCh.left);
+
+//     if ((recEl.left - rec.left - 20) < el.layerX) {
+//         console.log("rec :" + rec.left);
+//         move(100, recEl.left, true);
+//     }
+// });
+////////////////////
+//console.log(rec.right - rec.left); //947.4000091552734 //802
+//console.log("recEl.left - rec.left" + (recEl.left - rec.left)); //
+// if (direction) {  }
+//console.log("rec.right" + rec.right);
+//console.log("rec.left" + rec.left);
+//console.log("recEl.right" + (rec.right - recEl.right));
+//if (direction) {
+//move(recEl.top, recEl.left, true); 
+//imgCatEl.style.left = posX;
+//imgCatEl.style.left = posX;
+
+//} else {
+
+//}
+// else {
+//     direction = false;
+//     move(top, posX, direction);
+// }
+//  recEl.left += 10 + 'px';
+//console.log(rec.right);
+//console.log(recEl.left);
+//console.log(recEl.top);
+
+
+
+// if (!direction) {
+//     console.log(recEl.left);
+//     if (recEl.left < 409) {
+//         move(top, posX, direction);
+//     } else {
+//         direction = true;
+//         move(top, posX, direction)
+//     }
+
+// }
+// console.log(el.pageX);
+// console.log(el.pageY);
+// console.log(imgCatEl.offsetLeft);
+// console.log(imgCatEl.scrollLeft);
+
+
+//console.log(rec.left);
+// console.log(recEl.left);
+
+///console.log("y " + y);
+//imgCatEl.style.top = y + 10 + 'px';
+// leftS.classList.add("hide");
+// rightS.classList.remove("hide");
+
+
+
+///////////////////
+// var parentPos = document.getElementById('parent-id').getBoundingClientRect(),
+//     childrenPos = document.getElementById('children-id').getBoundingClientRect(),
+//     relativePos = {};
+
+// relativePos.top = childrenPos.top - parentPos.top,
+//     relativePos.right = childrenPos.right - parentPos.right,
+//     relativePos.bottom = childrenPos.bottom - parentPos.bottom,
+//     relativePos.left = childrenPos.left - parentPos.left;
+
+//console.log(relativePos);
+// const parent_id = document.getElementById('parent-id');
+// const child_id = document.getElementById('children-id');
+// let t = false;
+// parent_id.addEventListener("scroll", function name() {
+//     var parentPos = document.getElementById('parent-id').getBoundingClientRect(),
+//         childrenPos = document.getElementById('children-id').getBoundingClientRect(),
+//         relativePos = {};
+//     // let childHeight = child_id.offsetHeight;
+//     // let parentHeight = parent_id.offsetHeight;
+//     relativePos.top = childrenPos.top - parentPos.top,
+//         relativePos.right = childrenPos.right - parentPos.right,
+//         relativePos.bottom = childrenPos.bottom - parentPos.bottom,
+//         relativePos.left = childrenPos.left - parentPos.left;
+
+//     // relativePos.top = childrenPos.top - parentPos.top,
+//     //     relativePos.right = childrenPos.right - parentPos.right,
+//     //     relativePos.bottom = childrenPos.bottom - parentPos.bottom,
+//     //     relativePos.left = childrenPos.left - parentPos.left;
+//     if (relativePos.bottom === 0) {
+//         console.log("bottom");
+//     }
+
+//     if (childrenPos.top > 0) {
+//         if (t) {
+//             console.log("top");
+//             t = false;
+//         }
+//     } else {
+//         t = true;
+//     }
+
+//     //console.log(t);
+//     // if ((parentHeight - childHeight - relativePos.top) === 0) {
+//     //     console.log("bottom");
+//     // }
+//     // console.log("parentHeight" + parentHeight);
+//     // console.log("childHeight" + childHeight);
+//     // console.log(parentHeight - childHeight - relativePos.top);
+//     //console.log("childrenPos" + childrenPos.top);
+//     //console.log(parentPos.top);
+//     // console.log(relativePos.top);
+// });
+////////////////////// 
+
+//element.scrollHeight - element.scrollTop === element.clientHeight
+
+function mySize() {
+    console.log(document.documentElement.clientWidth);
+    console.log(document.documentElement.clientHeight);
+    console.log('Текущая прокрутка сверху: ' + window.pageYOffset);
+    console.log('Текущая прокрутка слева: ' + window.pageXOffset);
+    console.log('полная ширина окна: ' + window.innerWidth);
+    console.log('полная висота  окна: ' + window.innerHeight);
+    console.log('ширина окна за вычетом полосы прокрутки: ' + document.documentElement.clientWidth);
+    console.log('висота окна за вычетом полосы прокрутки: ' + document.documentElement.clientHeight);
+
+    const screenWidth = window.screen.width;
+    const screenHeight = window.screen.height;
+    console.log("screenHeight " + screenHeight);
+    console.log("screenWidth " + screenWidth);
+
+    const availableScreenWidth = window.screen.availWidth;
+    const availableScreenHeight = window.screen.availHeight;
+    console.log("доступного размера экрана Width " + availableScreenWidth);
+    console.log("доступного размера экрана Height " + availableScreenHeight);
+
+    const windowOuterWidth = window.outerWidth;
+    const windowOuterHeight = window.outerHeight;
+    console.log("размере внешнего окна Width " + windowOuterWidth);
+    console.log("размере внешнего окна Height " + windowOuterHeight);
+
+    const windowInnerWidth = window.innerWidth;
+    const windowInnerHeight = window.innerHeight;
+    console.log("ширина и высота области просмотра Width " + windowInnerWidth);
+    console.log("ширина и высота области просмотра Height " + windowInnerHeight);
+
+    const pageWidth = document.documentElement.scrollWidth;
+    const pageHeight = document.documentElement.scrollHeight;
+    console.log("размера веб-страницы  Height " + pageHeight);
+    console.log("размера веб-страницы  Width " + pageWidth);
+
+    console.log("test_table  " + document.getElementById("test_table").offsetHeight);
+}
